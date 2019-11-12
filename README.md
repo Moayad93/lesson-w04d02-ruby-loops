@@ -139,7 +139,7 @@ puts "You made it out! Congrats!"
 ```rb
 users = ["Alice", "Bob", "Carol"]
 users.length.times do |index|
-  puts users[index]  
+  puts users[index]
 end
 ```
 > [**Further Reading on Ruby loops**](http://www.tutorialspoint.com/ruby/ruby_loops.htm)
@@ -217,7 +217,7 @@ puts uppercase.join(", ")
 
 How would you explain the difference in the result?
 ```
-
+In "each" we used the same array but when we finished it nothing outside the method will change. In "map" we made another array and everything outside the method will be changed.
 ```
 
 #### Explore 2
@@ -239,7 +239,7 @@ puts uppercase.join(", ")
 
 What is the difference in the result of these two snippets?
 ```
-
+In "each" we inserted the values in the uppercase array. In "map" we made another array that has the returned value of the statement.
 ```
 
 #### Explore 3: Bang
@@ -257,7 +257,7 @@ Below is the same snippet, but with `.map!` instead of `.map`.
 
 What does `!` often indicate in Ruby?
 ```
-
+It changes the original value of the variable.
 ```
 
 ```rb
@@ -269,12 +269,12 @@ puts uppercase
 
 What's the difference between `.map` and `.map!`?
 ```
-
+In ".map" we assigned a copy of the array without changing the original array. In ".map!" we assigned a copy of the array and change the original array.
 ```
 
 ### Exercise: Practice Map (15 minutes)
 
-Use `map` to do the following...  
+Use `map` to do the following...
 
 1. Create an array that appends "Duck" to everybody in this array of first names
 
